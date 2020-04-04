@@ -135,53 +135,53 @@ if __name__ == '__main__':
 
 
 ## plot for Metdata
-import matplotlib.pyplot as plt
+    import matplotlib.pyplot as plt
 
 # precip data
-Original=ReadData(fileName)[0]
+    Original=ReadData(fileName)[0]
 
-Checked=DataDF
+    Checked=DataDF
 
-Original['Precip'].plot(color='red')
-Checked['Precip'].plot(color='blue')
-plt.xlabel('Date')
-plt.ylabel('Precip')
-plt.legend(['Original','Checked'])
+    Original['Precip'].plot(color='red')
+    Checked['Precip'].plot(color='blue')
+    plt.xlabel('Date')
+    plt.ylabel('Precip')
+    plt.legend(['Original','Checked'])
 
-plt.savefig('Precip plot.png')
-plt.close()
+    plt.savefig('Precip plot.png')
+    plt.close()
 
-# Max Temp Plot
-Original['Max Temp'].plot(color='red')
-Checked['Max Temp'].plot(color='blue')
-plt.xlabel('Date')
-plt.ylabel('Max Temp')
-plt.legend(['Original','Checked'])
-
-plt.savefig('Maximum Temperature.png')
-plt.close()
-
+    # Max Temp Plot
+    Original['Max Temp'].plot(color='red')
+    Checked['Max Temp'].plot(color='blue')
+    plt.xlabel('Date')
+    plt.ylabel('Max Temp')
+    plt.legend(['Original','Checked'])
+    
+    plt.savefig('Maximum Temperature.png')
+    plt.close()
+    
 
 # Min Temp Plot
-Original['Min Temp'].plot(color='red')
-Checked['Min Temp'].plot(color='blue')
-plt.xlabel('Date')
-plt.ylabel('Min Temp')
-plt.legend(['Original','Checked'])
+    Original['Min Temp'].plot(color='red')
+    Checked['Min Temp'].plot(color='blue')
+    plt.xlabel('Date')
+    plt.ylabel('Min Temp')
+    plt.legend(['Original','Checked'])
 
-plt.savefig('Minimum Temperature.png')
-plt.close()
+    plt.savefig('Minimum Temperature.png')
+    plt.close()
 
 # Wind Speed Plot
-Original['Wind Speed'].plot(color='red')
-Checked['Wind Speed'].plot(color='blue')
-plt.xlabel('Date')
-plt.ylabel('Wind Speed')
-plt.legend(['Original','Checked'])
+    Original['Wind Speed'].plot(color='red')
+    Checked['Wind Speed'].plot(color='blue')
+    plt.xlabel('Date')
+    plt.ylabel('Wind Speed')
+    plt.legend(['Original','Checked'])
+    
 
-
-plt.savefig('Wind Speed.png')
-plt.close()
+    plt.savefig('Wind Speed.png')
+    plt.close()
 
 
 
